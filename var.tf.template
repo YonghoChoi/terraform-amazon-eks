@@ -1,0 +1,20 @@
+locals {
+  env     = ""
+  project = ""
+  name    = join("", [local.env, local.project])
+  vpc_id  = ""
+  private_subnets = []
+  kms_key_arn         = ""
+  secrets_manager_arn = ""
+  aws_credential = {
+    account_id = ""
+    profile    = ""
+    region     = ""
+  }
+  tags = {
+    Environment = ""
+    Terraform   = ""
+    Project   = ""
+  }
+}
+
